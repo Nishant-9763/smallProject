@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+#root {
+  width: 100vw;
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+ label{
+  margin-right: 15px;
+ }
+ input{
+  padding: 10px;
+  width: 275px;
+  border-radius: 10px;
+ }
+ h3{
+  margin-bottom: 50px;
+ }
+
+ /* index.css or another CSS file */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #0056b3;
+}
+
+/* index.css or another CSS file */
+
+/* Basic animation for the h1 tag */
+h1 {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* 2s duration, forwards ensures it stays visible after the animation */
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* Start from 20px above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at the normal position */
+  }
+}
+
+/* Animation for the navigation menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  animation: slideIn 1s 0.5s forwards; /* Delay the menu for 0.5s */
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeInLinks 1s forwards;
+}
+
+nav ul li a:hover {
+  color: #0056b3;
+}
+
+/* Fade In Links Animation */
+@keyframes fadeInLinks {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Slide In Animation for the Navigation Menu */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* Start from above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at the normal position */
+  }
+}
+
+/* Create bubble effect on the page */
+.bubble {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(118, 103, 244, 0.5); /* Light blue bubble */
+  opacity: 0;
+  animation: float 10s infinite, fade 10s infinite;
+  pointer-events: none; /* Make sure the bubbles don't interfere with clicking */
+}
+
+/* Keyframe animation to make the bubbles float and move */
+@keyframes float {
+  0% {
+    transform: translateX(0) translateY(0); /* Start at the original position */
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(100vw) translateY(-100vh); /* Move bubbles diagonally */
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(-100vw) translateY(100vh); /* Finish with the bubbles off-screen */
+    opacity: 1;
+  }
+}
+
+/* Fade the bubbles in and out */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
